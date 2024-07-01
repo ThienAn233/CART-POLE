@@ -67,4 +67,7 @@ $$\theta_{t+1}=\theta_t+\omega_{t+1}\cdot dt$$
 $$\omega_{t+1}=\omega_t+\alpha_{t+1}\cdot dt$$
 
 By choosing a small enough $dt$, we can achieve an accurate simulation of the system.
-https://github.com/ThienAn233/CART-POLE/assets/90390412/f40d5e7e-fc82-4993-9da8-7ad4158b9d4f
+
+
+https://github.com/ThienAn233/CART-POLE/assets/90390412/3f2c3d2d-3fa2-4edd-8b22-df1ccd2f9fcc
+
