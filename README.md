@@ -1,5 +1,7 @@
 # Simplify CART-POLE Simulation project.
 
+https://github.com/ThienAn233/CART-POLE/blob/main/cartpole.mp4
+
 The purpose of this project is to create an environment that simulates the cart-pole dynamic system. The original problem is related to the [inverted pendulum](https://en.wikipedia.org/wiki/Inverted_pendulum), which consists of a pendulum with its center of mass above its pivot point and a cart that moves the pendulum horizontally. This system is unstable and falls over without additional help. The inverted pendulum is a classic problem in **dynamics** and **control** theory and is used as a benchmark for testing control strategies. It is often implemented with the pivot point mounted on a cart that can move horizontally under control.
 
 ## Limitations and assumptions.
@@ -11,7 +13,7 @@ The assumptions are also the limitations of this project, aside from computation
 
 ## Modelling the cart.
 
-<center><image src=CART.png height=350></center>
+<div align="center"><image src=CART.png height=350></div>
 
 By Newton's second law:
 
@@ -31,7 +33,7 @@ $$a=\frac{F_{in}}{m_{cart}+m_{pole}}-\mu_{lin}$$
 This resulting equation is used to simulate the motion of the cart given the input force $F_{in}$, the masses of both the cart and pole, and the friction coefficient $\mu$. Note that the force caused by friction is opposite to the direction of movement (velocity).
 
 ## Modelling the pole
-<center><image src=POLE.png width=350></center>
+<div align="center"><image src=POLE.png width=350></div>
 
 The case of the pole is a bit more complicated since it involves angular form of Newton's second law. $T$ is the torque applied to the object, $I$ is the moment of inertia, and $\alpha$ is the angular acceleration.
 
@@ -67,4 +69,3 @@ $$\theta_{t+1}=\theta_t+\omega_{t+1}\cdot dt$$
 $$\omega_{t+1}=\omega_t+\alpha_{t+1}\cdot dt$$
 
 By choosing a small enough $dt$, we can achieve an accurate simulation of the system.
-<center><video src='cartpole.mp4' width=480/></center>
