@@ -1,7 +1,5 @@
 # Simplify CART-POLE Simulation project.
 
-https://github.com/ThienAn233/CART-POLE/blob/main/cartpole.mp4
-
 The purpose of this project is to create an environment that simulates the cart-pole dynamic system. The original problem is related to the [inverted pendulum](https://en.wikipedia.org/wiki/Inverted_pendulum), which consists of a pendulum with its center of mass above its pivot point and a cart that moves the pendulum horizontally. This system is unstable and falls over without additional help. The inverted pendulum is a classic problem in **dynamics** and **control** theory and is used as a benchmark for testing control strategies. It is often implemented with the pivot point mounted on a cart that can move horizontally under control.
 
 ## Limitations and assumptions.
@@ -69,3 +67,4 @@ $$\theta_{t+1}=\theta_t+\omega_{t+1}\cdot dt$$
 $$\omega_{t+1}=\omega_t+\alpha_{t+1}\cdot dt$$
 
 By choosing a small enough $dt$, we can achieve an accurate simulation of the system.
+https://github.com/ThienAn233/CART-POLE/assets/90390412/f40d5e7e-fc82-4993-9da8-7ad4158b9d4f
