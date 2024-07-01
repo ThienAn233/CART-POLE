@@ -16,12 +16,15 @@ The assumptions are also the limitations of this project, aside from computation
 By Newton's second law:
 
 $$\sum\vec{F}=m\vec{a}$$
+
 $$\Leftrightarrow\sum\vec{F}=(m_{cart}+m_{pole})\cdot\vec{a}$$
-$$\Leftrightarrow\vec{F}_{in}+\vec{F}_{friction}=(m_{cart}+m_{pole})\cdot\vec{a}$$
+
+$$\Leftrightarrow \vec{F_{in}}+\vec{F_{friction}}=(m_{cart}+m_{pole})\cdot\vec{a}$$
 
 Projecting the above equation onto the x-axis, we get:
 
 $$F_{in}-\mu_{lin}\cdot N=(m_{cart}+m_{pole})\cdot a$$
+
 $$\Leftrightarrow F_{in}-\mu_{lin}\cdot (m_{cart}+m_{pole})=(m_{cart}+m_{pole})\cdot a$$
 
 Isolating the acceleration of the cart:
@@ -39,7 +42,7 @@ $$ \sum \vec{T}=I\cdot \vec{\alpha}$$
 
 Considering the coordinate frame of the pole, the pole withstands a fictitious force caused by the cart and its own weight. The  left-hand side (LHS) can be written as:
 
-$$\vec{F}_{fictitious}\times \vec{r}+\vec{P}_{pole}\times\vec{r}+\vec{T}_{friction}=I\cdot \vec{\alpha}$$
+$$\vec{F_{fictitious}}\times \vec{r}+\vec{P_{pole}}\times\vec{r}+\vec{T_{friction}}=I\cdot \vec{\alpha}$$
 
 Choosing the anti-clockwise direction as positive:
 
@@ -57,13 +60,17 @@ $$\alpha = \frac{3}{2L}\left(a\cdot\sin{\theta}-g\cdot\cos{\theta}-2\frac{\mu_{r
 Based on the definition of acceleration and velocity in continious time:
 
 $$x(t)=\int_0^tv(t)dt \Rightarrow x_t =\sum_{i=0}^tv_i\cdot dt$$
+
 $$ x(t+1)=\int_0^{t+1}v(t)dt\Rightarrow x_{t+1} =\sum_{i=0}^{t+1}v_i\cdot dt$$
+
 $$\Rightarrow x_{t+1}=x_t+v_{t+1}\cdot dt$$
 
 Similarly, we also have:
 
 $$v_{t+1}=v_t+a_{t+1}\cdot dt$$
+
 $$\theta_{t+1}=\theta_t+\omega_{t+1}\cdot dt$$
+
 $$\omega_{t+1}=\omega_t+\alpha_{t+1}\cdot dt$$
 
 By choosing a small enough $dt$, we can achieve an accurate simulation of the system.
